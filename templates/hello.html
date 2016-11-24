@@ -2,11 +2,30 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>SmartNinja basic Jinja template</title>
+    <title>{%block title%}hello.html{%endblock title%}</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-    <h1>Hello, SmartNinja!</h1>
+    <h1>pozdravljeni</h1>
+    <form method="post" action="/rezultat" >
+
+        <label for="vpis-sporocila">vpisite vaše sporočilo</label>
+        <input name="sporocilo" id="vpis-sporocila">
+        <br>
+        <label for="input-ime" >vpiši svoje ime</label>
+        <input name="ime" id="input-ime"></br>
+
+      <br>
+        <label for="input-starost">starost</label>
+        <input name="starost" id="input-starost" type="number">
+      </br>
+        <button type="submit">oddaj sporočilo</button>
+    </form>
+
+
+
+
+
 </body>
 </html>
